@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\Admin;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -49,5 +51,34 @@ Route::view('services','front.services')->name('services');
 Route::view('testmonial','front.testmonial')->name('testmonial');
     //=======Route team
 Route::view('team','front.team')->name('team');
+
+});
+
+
+//Admin Routes
+
+Route::prefix('admin/')->name('admin.')->group(function (){
+
+    // Route::middleware('admin')->group(function(){
+
+           //======
+    Route::view('','admin.index')->name('index');
+
+        /////===========settings page
+
+    Route::view('/settings','admin.settings.index')->name('settings');
+
+
+    /////===========skills page
+    Route::view('/skills','admin.skills.index')->name('skills');
+
+
+
+
+
+    //route
+    Route::view('login','admin.auth.login')->middleware('guard:admin')->name('login');
+
+
 
 });

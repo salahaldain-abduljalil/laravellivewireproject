@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto py-0">
             <a href="{{ route('front.index') }}" class="nav-item nav-link @yield('index')">Home</a>
-            <a href="{{ route('front.about') }}" class="nav-item nav-link  @yield('about')">">About</a>
+            <a href="{{ route('front.about') }}" class="nav-item nav-link  @yield('about')">About</a>
             <a href="{{ route('front.services') }}" class="nav-item nav-link @yield('service')">Service</a>
             <a href="{{ route('front.project') }}" class="nav-item nav-link @yield('project')">Project</a>
             <div class="nav-item dropdown">
