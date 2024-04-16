@@ -36,7 +36,11 @@
                         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                             Close
                         </button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">
+
+                            @include('livewire.admin.loading',['buttonName'=>'Update'])
+
+                        </button>
                     </div>
                 </form>
 
