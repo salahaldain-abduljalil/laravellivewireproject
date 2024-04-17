@@ -103,6 +103,28 @@
                     </a>
                   </li>
 
+                  <!-- COUNTERS -->
+                  <li class="menu-item @yield('counters-active')">
+                    <a href="{{route('admin.counters') }}" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cog"></i>
+                      <div data-i18n="Analytics">Counters</div>
+                    </a>
+                  </li>
+                  <!-- MESSAGES -->
+                  <li class="menu-item @yield('messages-active')">
+                    <a href="{{route('admin.messages') }}" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cog"></i>
+                      <div data-i18n="Analytics">Messages</div>
+                    </a>
+                  </li>
+                  <!-- CATEGORIES -->
+                  <li class="menu-item @yield('categories-active')">
+                    <a href="{{route('admin.categories') }}" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cog"></i>
+                      <div data-i18n="Analytics">Categories</div>
+                    </a>
+                  </li>
+
 
             </ul>
           </aside>

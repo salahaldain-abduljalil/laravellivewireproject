@@ -1,16 +1,16 @@
 <?php
 
-namespace {{ namespace }};
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class {{ class }} extends Model
+class Category extends Model
 {
     use HasFactory;
 
 
-    protected $table='';
+    protected $table='categories';
     protected $primaryKey='id';
     protected $KeyType='integer';
     protected $guarded=['id'];

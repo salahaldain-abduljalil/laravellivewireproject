@@ -71,8 +71,14 @@ Route::prefix('admin/')->name('admin.')->group(function (){
 
     /////===========skills page
     Route::view('/skills','admin.skills.index')->name('skills');
-    /////===========skills subscribers
+    /////=========== subscribers
     Route::view('/subscribers','admin.subscribers.index')->name('subscribers');
+    /////=========== counters
+    Route::view('/counters','admin.counters.index')->name('counters');
+    /////===========messages route
+    Route::view('/messages','admin.messages.index')->name('messages');
+    /////===========categories route
+    Route::view('/categories','admin.categories.index')->name('categories');
 
 
 

@@ -13,7 +13,7 @@
         @error('progress')
             <span class="text-danger">{{ $message }}</span>
         @enderror
-    </div>
+    </div> 
 
 </x-create-component>
 

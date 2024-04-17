@@ -30,7 +30,8 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{asset("admin-assets")}}/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Page CSS -->
     <!-- Page -->
     <link rel="stylesheet" href="{{asset("admin-assets")}}/vendor/css/pages/page-auth.css" />
