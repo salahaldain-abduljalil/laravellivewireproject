@@ -79,6 +79,10 @@ Route::prefix('admin/')->name('admin.')->group(function (){
     Route::view('/messages','admin.messages.index')->name('messages');
     /////===========categories route
     Route::view('/categories','admin.categories.index')->name('categories');
+       // ============================================ SERVICES PAGE
+       Route::view('services', 'admin.services.index')->name('services');
+    /////===========projects route
+    Route::view('/projects','admin.projects.index')->name('projects');
 
 
 

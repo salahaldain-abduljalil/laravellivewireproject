@@ -1,19 +1,26 @@
 
-    <!-- Modal -->
-    <div class="modal fade " id="createModal" tabindex="-1" aria-hidden="true"  wire:ignore.self>
+ <!-- Modal -->
+    <div class="modal fade " id="showModal" tabindex="-1" aria-hidden="true"  wire:ignore.self>
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">{{ $title }}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel1">Edit Skill</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <form wire:submit.prevent='submit' enctype="multipart/form-data">
 
 
                     <div class="modal-body">
                         <div class="row">
-                         {{ $slot }}
+
+                            <div class="col-md-12 mb-0">
+                                <label class="form-label">Name</label>
+                                <div class="form-control">{{ $name }}</div>
+                            </div>
+                            <div class="col-md-12 mb-0 mt-2">
+                                <label class="form-label">Description</label>
+                                <div class="form-control">{{ $description }}</div>
+                            </div>
                         </div>
 
                     </div>
@@ -21,14 +28,11 @@
                         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                             Close
                         </button>
-                        <button type="submit" class="btn btn-primary">
-                            @include('livewire.admin.loading',['buttonName'=>'Create'])
-                        </button>
                     </div>
-                </form>
 
             </div>
         </div>
     </div>
+
 
 

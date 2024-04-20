@@ -95,6 +95,15 @@
                     </a>
                   </li>
 
+                      <!-- services -->
+                      <li class="menu-item @yield('services-active')">
+                        <a href="{{route('admin.services') }}" class="menu-link">
+                          <i class="menu-icon tf-icons bx bx-cog"></i>
+                          <div data-i18n="Analytics">Services</div>
+                        </a>
+                      </li>
+
+
                   <!-- Subscribers -->
                   <li class="menu-item @yield('subscribers-active')">
                     <a href="{{route('admin.subscribers') }}" class="menu-link">
@@ -122,6 +131,13 @@
                     <a href="{{route('admin.categories') }}" class="menu-link">
                       <i class="menu-icon tf-icons bx bx-cog"></i>
                       <div data-i18n="Analytics">Categories</div>
+                    </a>
+                  </li>
+                  <!-- PROJECTS -->
+                  <li class="menu-item @yield('projects-active')">
+                    <a href="{{route('admin.projects') }}" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cog"></i>
+                      <div data-i18n="Analytics">Projects</div>
                     </a>
                   </li>
 
